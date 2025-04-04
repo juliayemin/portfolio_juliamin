@@ -1,321 +1,360 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thetsu Ye Min</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thetsu Ye Min</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
-    <header class="header">
-        <a href="#home" class="logo">
-        <span>Thetsu Ye Min</span></a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-            
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#portfolios">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo"><span>Thetsu Ye Min</span></a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#portfolios">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Home Section Starts-->
-    
-    <section class="home" id="home">
-        <div class="content">
-            <h1>Hi! I am <span>Julia</span></h1>
-            <h3 class="text-animation">
-                I am a <span></span>
-            </h3>
-            <p>A passionate data analysis enthusiastic from Bay Area, San Francisco, USA.
-                Recently graduated from UC Berkeley Extension Bootcamp. I believe in the power of data and its ability to transform business and society.
-                I am a quick learner and a team player who is always eager to learn new technologies and tools. 
-                My background in hospitality and customer service has taught me the importance of communication and teamwork.
-                I am looking for opportunities to apply my skills and knowledge to solve real-world problems.
-            </p>
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="content">
+      <h1>Hi! I am <span>Julia</span></h1>
+      <h3 class="subheading">Experienced Administrative Assistant</h3>
+      <p>based in the San Francisco Bay Area. I specialize and known for keeping teams organized, meetings on track, attention to detail and operations running smoothly.
+        I was hands on well trained in a hospitality background that I excel in operations, logistics, and process management. 
+        I thrive in both challenging and fast-paced environments. I am not afraid to ask and believe in proactively streamlining workflows. 
+        This approach not only cut off some conflicts but also help reach the needs before challenges arises.
+      </p>
 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/julia-m-b20b8a103/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/juliayemin"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/notyour_juls/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://public.tableau.com/app/profile/thetsu.ye.min/vizzes"><i class="fab fa-twitter"></i></a>
-            </div>
-            <a href="#contact" class="btn">HIRE ME
-                <i class="fa-solid fa-briefcase"></i>
-            </a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/julia-m-b20b8a103/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/juliayemin"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/notyour_juls/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <a href="#contact" class="btn">HIRE ME <i class="fa-solid fa-briefcase"></i></a>
+    </div>
+
+    <div class="home-img">
+      <img src="/static/img/Headshot.JPG" alt="home-img">
+    </div>
+  </section>
+
+  <!-- Projects Section Starts -->
+<section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+  
+    <!-- Tab Buttons -->
+    <div class="tab-buttons-wrapper">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="admin-projects">Admin Projects</button>
+        <button class="tab-btn" data-tab="data-projects">Data Projects</button>
+        <div class="tab-underline"></div>
+      </div>
+    </div>
+  
+    <!-- Admin Projects -->
+    <div class="tab-content active" id="admin-projects">
+      <div class="projects-container">
+  
+        <div class="projects-box">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Meeting Coordination</h3>
+          <p>Managed shared calendars, prepped agendas, and facilitated cross-department communication.</p>
         </div>
-
-        <div class="home-img">
-            <img src="/static/img/Headshot.JPG" alt="home-img">                
+  
+        <div class="projects-box">
+          <i class="fa-solid fa-golf-ball-tee"></i>
+          <h3>Golf Operations Admin</h3>
+          <p>Oversaw tee times, signage, logistics, and member communications for club events.</p>
         </div>
-    </section>
-
-    <!-- Home Section Ends-->
-
-    <!-- Projects Section Starts -->
-    <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-
-        <div class="projects-container">
-            <div class="projects-box">
-                <i class="fa-solid fa-basketball"></i>
-                <h3>NBA Draft Study</h3>
-                <p>For "NBA Draft Study" project, I worked with classmates at UC Berkeley Extension Bootcamp to analyze NBA draft data to see if we could find trends that predict a player’s success. 
-                    We collected historical draft data, player earnings, and stats, then cleaned and processed this information using Python and pandas. 
-                    Our analysis included examining the correlation between draft positions and career earnings, identifying top-producing universities, and exploring the geographic origins of NBA players. 
-                    We used libraries like Plotly and D3.js to create interactive graphs that made our findings accessible. </p>
-                    <a href="https://github.com/danielmilesrose/nba_draft_study" class="btn">View Project</a>
-            </div>
-
-            <div class="projects-box">
-                <i class="fa-solid fa-file-video"></i>
-                <h3>Binging Netflix Data</h3>
-                <p>The second project at the UC Berkeley Extension Bootcamp was another group project which we took on the exciting challenge of diving into Netflix's recently shared viewing data. 
-                    Netflix gave us a peek into what shows and movies people are watching globally.
-                    We mixed this data with details from IMDb to give everyone a deeper look into popular viewing trends.
-                    Our websit is all about helping users find cool insights about Netflix's shows and what might be their next favorite watch. 
-                    We built this site using tools that help us make sense of big data with interactive charts, and graphs built with libraries such as D3.js and Plotly.
-                    The recommendations are generated through data processing with Python, showcasing the power of backend technologies such as Flask and Pandas in data manipulation, all while keeping things straightforward and respectful of privacy.</p>
-                    <a href="https://binging-netflix-data-online.onrender.com/" class="btn">View Project</a>
-            </div>
-
-            <div class="projects-box">
-                <i class="fa-solid fa-file-audio"></i>
-                <h3>Jammin' with Spotify</h3>
-                <p>In "Jammin' With Spotify," our team at UC Berkeley Extension Bootcamp developed a machine learning model for Spotify's playlist continuation challenge. 
-                    We processed and cleaned data from 1 million Spotify playlists, extracting track features like danceability and energy using Spotify's API. 
-                    Our project involved detailed data handling, from initial extraction to cleaning, utilizing Python and pandas. 
-                    We explored machine learning models—cosine similarity, track clustering, and playlist clustering—to predict song recommendations based purely on musical characteristics. 
-                    Although we created a prototype website to showcase our findings and allow user interaction, we didn't host it publicly due to Spotify's terms and conditions. 
-                    This project highlighted our approach to data analysis, machine learning, and respecting data usage policies.</p>
-                    <a href="https://github.com/JoeBrueneman/Jammin_With_Spotify" class="btn">View Project</a>
-            </div>
+  
+        <div class="projects-box">
+          <i class="fa-solid fa-clipboard-list"></i>
+          <h3>SOP Documentation</h3>
+          <p>Created clear, updated SOPs for internal workflows and guest services processes.</p>
         </div>
-
-    </section>
-    <!-- Projects Section Ends -->
-
-    <!-- Portfolio Section Starts -->
-
-    <section class="portfolios" id="portfolios">
-        <h2 class="heading">Portfolio</h2>
-
-        <div class="portfolios-container">
-            <div class="portfolio-box">
-                <img src="/static/img/Crowdfunding Chart.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://docs.google.com/spreadsheets/d/1GND1R_yhiooH-6auImU_FQKJP_BuloF9/edit?usp=sharing&ouid=102932017706067983565&rtpof=true&sd=true"><i class="fa-solid fa-file-excel"></i></a>
-                    <p>Utilized Excel to organize and analyze a database of 1,000 sample crowdfunding projects to uncover any hidden trends.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="/static/img/Python.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://github.com/juliayemin/pandas-challenge.git"><i class="fa-brands fa-python"></i></a>
-                    <p>Created and manipulated Pandas DataFrames to analyze school and standardized test data with Python and Jupyter Notebook.</p>
-                </div>
-            </div>
-            
-            <div class="portfolio-box">
-                <img src="/static/img/Correlation & Regression.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://github.com/juliayemin/Pymaceutical_Challenge.git"><i class="fa-solid fa-square-poll-vertical"></i></a>
-                    <p>Used Matplotlib to produce all necessary tables and figures summarizing the data for the technical report on a clinical study conducted by a new pharmaceutical company, Pymaceuticals, Inc.</p>
-                </div>
-            </div>
-            
-            <div class="portfolio-box">
-                <img src="/static/img/API.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://github.com/juliayemin/python-api-challenge.git"><i class="fa-brands fa-github"></i></a>
-                    <p>Utilized Python, OpenWeatherMap API, and Matplotlib to analyze and visualize how latitude affects weather variables.
-                        Implimented API integration, data manipulation, and graphical presentation.</p>
-                </div>
-            </div>
-            
-            <div class="portfolio-box">
-                <img src="/static/img/SQL.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://github.com/juliayemin/sql-challenge.git"><i class="fa-solid fa-code"></i></a>
-                    <p>Worked on SQL challenge by using Python, SQLAlchemy, Pandas, and Flask to analyze climate data for planning a holiday in Honolulu, Hawaii. 
-                        Developed a web application to visualize precipitation levels and station activity, providing insights into weather trends. </p>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="/static/img/Machine Learning.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://github.com/juliayemin/credit-risk-classification.git"><i class="fa-solid fa-robot"></i></a>
-                    <p>Developed a binary classification model using Python, TensorFlow, and Keras to help Alphabet Soup predict which funding applicants might succeed. 
-                        This involved analyzing data from over 34,000 organizations, focusing on key features and employing preprocessing techniques such as categorical variable encoding and data scaling. </p>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="/static/img/Neural Networks & Deep Learning.png" alt="">
-                <div class="portfolios-info">
-                    <a href="https://github.com/juliayemin/deep-learning-challenge.git"><i class="fa-solid fa-brain"></i></a>
-                    <p>Preprocessed data for Alphabet Soup's neural network model, dropping specific columns and organizing unique values. 
-                        Successfully split data into feature/target arrays and standardized values with StandardScaler. 
-                        Compiled, trained, and evaluated the model, noting some output errors but effectively saved model weights for optimization.</p>
-                </div>
-
-            </div>
+  
+        <div class="projects-box">
+          <i class="fa-solid fa-chart-column"></i>
+          <h3>Weekly Reporting</h3>
+          <p>Generated reports on tee sheet activity, member usage, and team scheduling efficiency.</p>
         </div>
-
-    </section>
-
-    <!-- Portfolio Section Ends -->
-
-    <!-- About Section Starts -->
-    <section class="timeline-section" id="about">
-        <h2 class="heading">Education & Work Experience</h2>
-        <a href="/static/img/Resume - Julia Min (Thetsu Ye Min).pdf" class="btn">RESUME
-            <i class="fa-solid fa-file"></i>
-        </a>
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">1999-2009</div>
-                <div class="timeline-content">
-                    <h3>Highschool</h3>
-                    <p>Practicing Highschool Yangon Institute of Education</p>
-                    <p>Yangon, Myanmar</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2010-2013</div>
-                <div class="timeline-content">
-                    <h3>Bachelor of Arts (BA)</h3>
-                    <p>Yangon University of Foreign Languages (YUFL)</p>
-                    <p>Language and Linguistics</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2015-2016</div>
-                <div class="timeline-content">
-                    <h3>Postgraduate Diploma</h3>
-                    <p>Hotel and Tourism Management Institute of Switzerland</p>
-                    <p>Hospitality and Tourism Business Management</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2016</div>
-                <div class="timeline-content">
-                    <h3>Internship</h3>
-                    <p>St Regis (Park City, Utah)</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2017-2019</div>
-                <div class="timeline-content">
-                    <h3>Gap Year & Part-Time Jobs</h3>
-                    <p>Went back to Hometown, Traveled in Europe, Became a Permenant Resident in USA and started part-time jobs</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2019-2021</div>
-                <div class="timeline-content">
-                    <h3>The Olympic Club</h3>
-                    <p>Food and Beverage Assistant & Supervisor</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021-present</div>
-                <div class="timeline-content">
-                    <h3>The Olympic Club</h3>
-                    <p>Golf Operations Administrative Assistant</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023-2024</div>
-                <div class="timeline-content">
-                    <h3>UC Berkeley Extension Bootcamp</h3>
-                    <p>Data Analytics Bootcamp</p>
-                </div>
-            </div>
+  
+      </div>
+    </div>
+  
+    <!-- Data Projects -->
+    <div class="tab-content" id="data-projects">
+      <div class="projects-container">
+  
+        <div class="projects-box">
+          <i class="fa-solid fa-basketball"></i>
+          <h3>NBA Draft Study</h3>
+          <p>Analyzed draft data with Python and D3.js to uncover performance trends by position and team.</p>
+          <a href="https://github.com/danielmilesrose/nba_draft_study" class="btn">View Project</a>
         </div>
+  
+        <div class="projects-box">
+          <i class="fa-solid fa-file-video"></i>
+          <h3>Binging Netflix Data</h3>
+          <p>Created a dashboard combining Netflix and IMDb data using Flask, Pandas, and Plotly.</p>
+          <a href="https://binging-netflix-data-online.onrender.com/" class="btn">View Project</a>
+        </div>
+  
+        <div class="projects-box">
+          <i class="fa-brands fa-spotify"></i>
+          <h3>Spotify Recommender</h3>
+          <p>Built a music recommendation engine using machine learning with 1M+ playlist data points.</p>
+          <a href="https://github.com/JoeBrueneman/Jammin_With_Spotify" class="btn">View Project</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section Ends -->
 
-    </section>
+  <!-- Portfolio Section Starts -->
+<section class="portfolios" id="portfolios">
+    <h2 class="heading">Portfolio</h2>
+  
+    <!-- Tab Buttons -->
+    <div class="tab-buttons-wrapper">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="admin-portfolio">Admin Portfolio</button>
+        <button class="tab-btn" data-tab="data-portfolio">Data Portfolio</button>
+        <div class="tab-underline"></div>
+      </div>
+    </div>
+  
+    <!-- Admin Portfolio -->
+    <div class="tab-content active" id="admin-portfolio">
+      <div class="portfolios-container">
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Scheduling Template.png" alt="">
+          <div class="portfolios-info">
+            <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+            <p>Excel Sheets template for daily deliveries, receiving records and staff assignments.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Event Checklist.png" alt="">
+          <div class="portfolios-info">
+            <a href="#"><i class="fa-solid fa-clipboard-list"></i></a>
+            <p>Pre-event checklist used for tournament planning and tee gifts distributions planning.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Digital Filing System.png" alt="">
+          <div class="portfolios-info">
+            <a href="#"><i class="fa-solid fa-folder-tree"></i></a>
+            <p>Screenshot of digital folder structure for easier document sharing across departments.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Admin Reports Sample.png" alt="">
+          <div class="portfolios-info">
+            <a href="#"><i class="fa-solid fa-chart-pie"></i></a>
+            <p>Report formats on member tee time usage, monthly purchasing report and golf raters rounds frequencies.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Data Portfolio -->
+    <div class="tab-content" id="data-portfolio">
+      <div class="portfolios-container">
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Crowdfunding Chart.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://docs.google.com/spreadsheets/d/1GND1R_yhiooH-6auImU_FQKJP_BuloF9"><i class="fa-solid fa-file-excel"></i></a>
+            <p>Excel dashboard analyzing 1,000 crowdfunding campaigns to uncover success patterns.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Python.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://github.com/juliayemin/pandas-challenge.git"><i class="fa-brands fa-python"></i></a>
+            <p>Used Python and pandas to evaluate school test data across districts using Jupyter Notebook.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Correlation & Regression.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://github.com/juliayemin/Pymaceutical_Challenge.git"><i class="fa-solid fa-square-poll-vertical"></i></a>
+            <p>Matplotlib charts visualizing clinical trials for a fictional pharmaceutical company, Pymaceuticals.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/API.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://github.com/juliayemin/python-api-challenge.git"><i class="fa-brands fa-github"></i></a>
+            <p>Analyzed global climate using OpenWeatherMap API and visualized results by latitude.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/SQL.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://github.com/juliayemin/sql-challenge.git"><i class="fa-solid fa-code"></i></a>
+            <p>SQL + Flask climate dashboard showing historical weather patterns in Hawaii.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Machine Learning.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://github.com/juliayemin/credit-risk-classification.git"><i class="fa-solid fa-robot"></i></a>
+            <p>Binary classification ML model predicting nonprofit funding outcomes with TensorFlow.</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-box">
+          <img src="/static/img/Neural Networks & Deep Learning.png" alt="">
+          <div class="portfolios-info">
+            <a href="https://github.com/juliayemin/deep-learning-challenge.git"><i class="fa-solid fa-brain"></i></a>
+            <p>Trained a deep learning model using Keras to predict nonprofit applicant outcomes.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section Ends -->
 
-    <!-- About Section Ends -->
-
-    <!-- Contact Section Starts -->
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
-            </div>
-
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-
-    </section>
-
-    <!-- Contact Section Ends -->
-
-    <!-- Footer Section -->
+  <!-- About Section Starts -->
+<section class="timeline-section" id="about">
+    <h2 class="heading">Education & Work Experience</h2>
+    <div class="resume-wrapper">
+      <a href="/static/img/Resume -Julia Min.pdf" class="btn">RESUME <i class="fa-solid fa-file"></i></a>
+    </div>
+  
+    <div class="timeline-items">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">1999–2009</div>
+        <div class="timeline-content">
+          <h3>Highschool</h3>
+          <p>Practicing Highschool Yangon Institute of Education – Yangon, Myanmar</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2010–2013</div>
+        <div class="timeline-content">
+          <h3>BA in Language and Linguistics</h3>
+          <p>Yangon University of Foreign Languages (YUFL)</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2015–2016</div>
+        <div class="timeline-content">
+          <h3>Postgraduate Diploma</h3>
+          <p>HTMi Switzerland – Hospitality & Tourism Business Management</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2016–2019</div>
+        <div class="timeline-content">
+          <h3>Hospitality Experience</h3>
+          <p>St. Regis Park City + Gap Year Travel + U.S. Residency</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2019–Present</div>
+        <div class="timeline-content">
+          <h3>The Olympic Club</h3>
+          <p>Admin Assistant, Golf Ops + F&B Supervisor</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023–2024</div>
+        <div class="timeline-content">
+          <h3>UC Berkeley Extension</h3>
+          <p>Data Analytics Bootcamp Graduate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section Ends -->
+  
+  <!-- Contact Section Starts -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
+      </div>
+      <textarea placeholder="Your Message" rows="8" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+  <!-- Contact Section Ends -->
+  
+  <!-- Footer Section -->
     <footer>
         <ul class="icons">
-            <li>
-                <a href="https://www.linkedin.com/in/julia-m-b20b8a103/"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="/static/img/Resume - Julia Min (Thetsu Ye Min).pdf"><i class="fa-solid fa-file"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/juliayemin"><i class="fa-brands fa-github"></i></a>
-            </li>
+        <li>
+            <a href="https://www.linkedin.com/in/julia-m-b20b8a103/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+            <a href="https://github.com/juliayemin" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+            <a href="/static/img/Resume -Julia Min.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>
+        </li>
         </ul>
+    
         <ul class="menu">
-            <li>
-                <a href="#home">Home</a>
-                <a href="#about">About Me</a>
-                <a href="/static/img/Resume - Julia Min (Thetsu Ye Min).pdf">Resume</a>
-                <a href="#contact">Contact</a>
-                <a href="#">Privacy Policy</a>
-            </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#portfolios">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
+    
         <p>© Julia Min | All Rights Reserved</p>
     </footer>
-    <!-- Footer Section ends -->
-
-    <script src="/static/js/main.js"></script>
-</body>
+    
+  <!-- Footer Section Ends -->
+  
+  <!-- JS -->
+  <script src="/static/js/main.js"></script>
+  </body>
 </html>
+  
